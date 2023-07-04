@@ -1,0 +1,104 @@
+body {
+    width: 75%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.name-heading {
+    font-size: 50px;
+    word-spacing: 0.3rem;
+    letter-spacing: 1rem;
+    padding: 20px;
+}
+
+.perks-div {
+    background-color: rgb(245, 234, 216);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.tutor-description {
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+.highlight {
+    font-weight: bold;
+}
+
+.thumbs {
+    width: 10rem;
+    height: 6rem;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 232, 232, 0.2);
+    border: 1px solid rgb(215, 215, 215, 0.1);
+    text-transform: uppercase;
+    padding: 30px;
+    text-align: center;
+}
+
+.thumbs:hover {
+    background-color: rgb(245, 234, 216);
+}
+
+.tech-div {
+    display: flex;
+    height: 4rem;
+    /* align-items: baseline; */
+}
+
+.static-sentence {
+    margin-top: 47px;
+}
+
+.display-techs {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'roboto', sans-serif;
+}
+
+
+@keyframes slide {
+    0% {
+      left: -20px;
+      top: 0px;
+      opacity: 0;
+    }
+
+    50% {
+        left: 50px;
+        opacity: 1;
+    }
+    100% {
+      left: 50px;
+      top: 0px;
+      opacity: 0;
+    }
+  }
+  
+.slide-animation {
+    animation: slide 4s ease-in-out forwards;
+}
+
+@keyframes static {
+    0% {
+        opacity: 1;
+      }
+  
+      50% {
+          opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+}
+
+.static-animation {
+    animation: static 4s ease-in-out forwards;
+}
